@@ -29,7 +29,11 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Age</th>
+                                        <th>Group</th>
+                                        <th>Image</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -37,7 +41,11 @@
                                     {% for student in students %}
                                     <tr>
                                         <td>{{ student.id }}</td>
-                                        <td>{{ student.name }}</td>
+                                        <td>{{ student.first_name }}</td>
+                                        <td>{{ student.last_name }}</td>
+                                        <td>{{ student.age }}</td>
+                                        <td>{{ student.group_name }}</td>
+                                        <td><img class="img" src="/media/{{ student.image }}" alt="photo" width="30px" height="40px"></td>
                                         <td>
                                             <div class="table-data-feature">
                                                 <a class="item" data-toggle="tooltip" href="{% url 'student_edit' pk=student.id %}" data-placement="top" title="" data-original-title="Edit">
