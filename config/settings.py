@@ -81,9 +81,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': "university_dashboard_db",
         'USER': "university_dashboardAdmin",
-        'PASSWORD': 'fotima2403',
-        'HOST':'127.0.0.1',
-        'PORT': "5432",
+        'PASSWORD': '',
+        'HOST':'',
+        'PORT': "",
     }
 }
 
